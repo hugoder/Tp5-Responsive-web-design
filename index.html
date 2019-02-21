@@ -13,27 +13,27 @@
 
 <body>
 	<header>
-		<div class="wrapper container d-flex">
-			<div class="logo-search mr-3">
+		<div class="row align-items-center">
+			<div class="logo-search col-4">
 				<img class="pull-left" src="img/logo.png" />
 			</div>
-			<div class="d-none d-sm-block">
+			<div class="d-none d-sm-block col-4">
 				<form method="POST" action="index.html">
 					<input type="search" required class="search">
 					<input type="submit" name="submit" value="Rechercher" class="submit">
 				</form>
 			</div>
-			<div class="user">
-				<a href="#">Luke Chesser</a>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<div class="user col-4 .offset-4">
+				<a class="text-right" href="#">Luke Chesser</a>
+				<div class="dropdown pull-right">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="caret"></span>
 					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Edit My Profile</a>
-						<a class="dropdown-item" href="#">Logout</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li><a href="#" title="Lien 1">Edit your profile</a></li>
+					<li><a href="#" title="Lien 2">Logout</a></li>
+					</ul>
 					</div>
-				</div>
 			</div>
 		</div>
 	</header>
